@@ -1,0 +1,16 @@
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+<div class="card">
+     <div class="card-header">
+          <h2>
+               <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+               {{{get_emoji}}}
+               <a href="/project/{{project.id}}">{{project.name}}</a>
+          </h2>
+          <p>Posted by {{project.user.name}} on {{format_date created_at}}</p>     
+     </div> 
+     <div class="card-body">
+          <p class="card-text">{{project.description}}</p>
+     </div>
+</div>
+{{/each}}

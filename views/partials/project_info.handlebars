@@ -1,0 +1,17 @@
+<div class="card mb-6">
+     <header class="card-header card-header-title has-background-grey-lighter">
+          <div class="column">
+               {{name}}
+          </div>
+          <div class="created-by">
+               <p id="comment-subtitle">
+                    Posted by <b>{{user.name}} </b> on <b>{{format_date created_at}}</b>
+               </p>
+          </div>
+     </header>
+     <div class="card-content">
+          <div class="content has-text-justified">
+               {{description}}
+          </div>
+     </div>
+</div>
